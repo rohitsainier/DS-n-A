@@ -13,6 +13,7 @@
 		22B10C4924C03089004FB927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B10C4824C03089004FB927 /* Assets.xcassets */; };
 		22B10C4C24C03089004FB927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B10C4B24C03089004FB927 /* Preview Assets.xcassets */; };
 		22B10C4F24C03089004FB927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B10C4D24C03089004FB927 /* LaunchScreen.storyboard */; };
+		22B10C5824C03863004FB927 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C5724C03863004FB927 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22B10C4B24C03089004FB927 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22B10C4E24C03089004FB927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B10C5024C03089004FB927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B10C5724C03863004FB927 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		22B10C4124C03084004FB927 /* DS n A */ = {
 			isa = PBXGroup;
 			children = (
+				22B10C5624C0384C004FB927 /* LinkedList */,
 				22B10C4224C03084004FB927 /* AppDelegate.swift */,
 				22B10C4424C03084004FB927 /* SceneDelegate.swift */,
 				22B10C4624C03084004FB927 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				22B10C4B24C03089004FB927 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22B10C5624C0384C004FB927 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				22B10C5724C03863004FB927 /* Node.swift */,
+			);
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				22B10C4324C03084004FB927 /* AppDelegate.swift in Sources */,
 				22B10C4524C03084004FB927 /* SceneDelegate.swift in Sources */,
 				22B10C4724C03084004FB927 /* ContentView.swift in Sources */,
+				22B10C5824C03863004FB927 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
