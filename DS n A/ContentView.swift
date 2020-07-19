@@ -13,6 +13,7 @@ import SwiftUI
 class ContentView: UIViewController {
     override func viewDidLoad() {
     
+    
 //        let node1 = Node(value: "Rohit")
 //        let node2 = Node(value: "Vikas")
 //        let node3 = Node(value: "Anish")
@@ -36,9 +37,11 @@ class ContentView: UIViewController {
 //        list.append(1)
 //        list.append(2)
 //        list.append(3)
-//        var middleNode = list.node(at: 1)!
-//        middleNode = list.insert(10, after: middleNode)
-//        print(list)
+//        let node = list.node(at: 1)!
+//        let value = list.remove(after: node)
+//        print(list,value)
+//
+        
     }
 }
 

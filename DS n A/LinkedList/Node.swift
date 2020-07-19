@@ -26,7 +26,6 @@ extension Node:CustomStringConvertible{
     }
 }
 
-
 //MARK:- LinkedList
 public struct LinkedList<Value>{
     public var head:Node<Value>?
@@ -69,6 +68,43 @@ public struct LinkedList<Value>{
         }
         node.next = Node(value: value, next: node.next)
         return node.next!
+    }
+    public mutating func pop() -> Value?{
+        defer{
+        head = head?.next
+        if isEmpty{
+            tail = nil
+        }
+        }
+        return head?.value
+    }
+    
+    public mutating func removeLast() -> Value?{
+        guard let head = head else{
+            return nil
+        }
+        guard head.next != nil else{
+            return pop()
+        }
+        var prev = head
+        var current = head
+        while let next = current.next{
+            prev = current
+            current = next
+        }
+        prev.next = nil
+        tail = prev
+        return current.value
+    }
+    
+    public mutating func remove(after node:Node<Value>) -> Value?{
+        defer{
+            if node.next === tail{
+                tail = node
+            }
+            node.next = node.next?.next
+        }
+        return node.next?.value
     }
 }
 
