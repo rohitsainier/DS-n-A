@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223652B724C96ADA0019E9B5 /* ArrayQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223652B624C96ADA0019E9B5 /* ArrayQueue.swift */; };
+		223652B924C96AF90019E9B5 /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223652B824C96AF90019E9B5 /* QueueProtocol.swift */; };
 		22B10C4324C03084004FB927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C4224C03084004FB927 /* AppDelegate.swift */; };
 		22B10C4524C03084004FB927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C4424C03084004FB927 /* SceneDelegate.swift */; };
 		22B10C4724C03084004FB927 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C4624C03084004FB927 /* ContentView.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223652B624C96ADA0019E9B5 /* ArrayQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayQueue.swift; sourceTree = "<group>"; };
+		223652B824C96AF90019E9B5 /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
 		22B10C3F24C03084004FB927 /* DS n A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DS n A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B10C4224C03084004FB927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B10C4424C03084004FB927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223652B524C96AC40019E9B5 /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				223652B624C96ADA0019E9B5 /* ArrayQueue.swift */,
+				223652B824C96AF90019E9B5 /* QueueProtocol.swift */,
+			);
+			path = Queues;
+			sourceTree = "<group>";
+		};
 		22B10C3624C03084004FB927 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		22B10C4124C03084004FB927 /* DS n A */ = {
 			isa = PBXGroup;
 			children = (
+				223652B524C96AC40019E9B5 /* Queues */,
 				22B10C5624C0384C004FB927 /* LinkedList */,
 				22B10C4224C03084004FB927 /* AppDelegate.swift */,
 				22B10C4424C03084004FB927 /* SceneDelegate.swift */,
@@ -158,9 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B10C4324C03084004FB927 /* AppDelegate.swift in Sources */,
+				223652B924C96AF90019E9B5 /* QueueProtocol.swift in Sources */,
 				22B10C4524C03084004FB927 /* SceneDelegate.swift in Sources */,
 				22B10C4724C03084004FB927 /* ContentView.swift in Sources */,
 				22B10C5824C03863004FB927 /* Node.swift in Sources */,
+				223652B724C96ADA0019E9B5 /* ArrayQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
