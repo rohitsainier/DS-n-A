@@ -28,6 +28,8 @@ func longestCommonSum(arr: [Int],arr2:[Int],n: Int) -> Int{
     return maxLen
 }
 
+
+//==================================================================
 //MARK:- Union
 func union(arr: [Int],arr2:[Int]){
     var i = 0
@@ -58,6 +60,8 @@ func union(arr: [Int],arr2:[Int]){
     }
 }
 
+
+//==================================================================
 //MARK:- Intersection
 func Intersection(arr: [Int],arr2:[Int]){
     var i = 0
@@ -77,6 +81,8 @@ func Intersection(arr: [Int],arr2:[Int]){
     }
 }
 
+
+//==================================================================
 //MARK: - Missing Number
 //Tip: sum = n*(n+1)/2
 func missingNumber(arr:[Int]) -> Int{
@@ -87,7 +93,7 @@ func missingNumber(arr:[Int]) -> Int{
     return total
 }
 
-
+//==================================================================
 //MARK:- minimumDistanceBetweenTwoArrayNumbers
 func minimumDistanceBetweenTwoArrayNumbers(arr: [Int],x: Int,y: Int) -> Int{
     var min_dist = Int.max
@@ -112,6 +118,8 @@ func minimumDistanceBetweenTwoArrayNumbers(arr: [Int],x: Int,y: Int) -> Int{
     return min_dist
 }
 
+
+//==================================================================
 //MARK:- Leaders
 func Leaders(arr: [Int]){
     var leader = arr[arr.count - 1]
@@ -123,5 +131,65 @@ func Leaders(arr: [Int]){
         }
     }
 }
+
+
+//MARK:- Majority Element
+//Tip:- By Using Moore's Voting Algorithm
+
+//STEP 1: Initialize index and Count
+//Index = 0, Count = 1
+
+//STEP 2: Loop from 1 to N-1
+
+//  if Arr[Index] == Arr[i]
+//  count = count + 1
+//  else
+//  count = count - 1
+
+
+//  if count == 0
+//    Index = i
+//    Count = 1
+
+//STEP 3: Return Index Element
+// return Arr[Index]
+
+func FindMajorityCandidate(arr: [Int]) -> Int{
+    var index = 0
+    var count = 1
+    for i in 1..<arr.count{
+        if arr[index] == arr[i]{
+            count += 1
+        }
+        else{
+            count -= 1
+        }
+        if count == 0{
+            index = i
+            count = 1
+        }
+    }
+    return arr[index]
+}
+
+func MajorityElement(arr: [Int],cand: Int){
+    var count = 0
+    for i in arr{
+        if i == cand{
+            count += 1
+        }
+    }
+    if count > arr.count / 2{
+        print("YES")
+    }
+    else{
+        print("NO")
+    }
+}
+
+//let arr = [2,3,4,5,6,8,4,4,4,4]
+//let cand = FindMajorityCandidate(arr:arr)
+//MajorityElement(arr:arr, cand: cand)
+
 
 
