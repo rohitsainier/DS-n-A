@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //MARK:- Longest Common Sum
 func longestCommonSum(arr: [Int],arr2:[Int],n: Int) -> Int{
@@ -132,7 +133,7 @@ func Leaders(arr: [Int]){
     }
 }
 
-
+//===================================================================
 //MARK:- Majority Element
 //Tip:- By Using Moore's Voting Algorithm
 
@@ -190,6 +191,18 @@ func MajorityElement(arr: [Int],cand: Int){
 //let arr = [2,3,4,5,6,8,4,4,4,4]
 //let cand = FindMajorityCandidate(arr:arr)
 //MajorityElement(arr:arr, cand: cand)
+
+//====================================================================================================================================
+//MARK:- Number Occuring odd number of times
+func oddOccur(arr: [Int]) -> Int{
+    var res = 0
+    for i in arr{
+        res = res ^ i
+    }
+    return res
+}
+
+
 
 
 
