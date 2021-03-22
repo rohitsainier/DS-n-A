@@ -202,6 +202,23 @@ func oddOccur(arr: [Int]) -> Int{
     return res
 }
 
+//========================================================================================================================================
+//MARK:- GreatestElementOnRightSide
+func GreatestElementOnRightSide(arr: [Int]){
+    var arr = arr
+    var GREATEST = arr[arr.count - 2]
+    arr[arr.count - 1] = -1
+    for i in stride(from: arr.count - 2, through: 0, by: -1){
+        let temp = arr[i]
+        arr[i] = GREATEST
+        if temp > GREATEST{
+            GREATEST = temp
+        }
+    }
+}
+
+
+
 
 
 
