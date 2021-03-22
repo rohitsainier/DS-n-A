@@ -217,6 +217,23 @@ func GreatestElementOnRightSide(arr: [Int]){
     }
 }
 
+//========================================================================================================================================
+//MARK:- BinarySearch
+func BinarySearch(arr:[Int],element: Int,low:Int,high:Int) -> Int{
+    if high >= low{
+        let mid = (low + high) / 2
+        if arr[mid] == element{
+            return mid
+        }
+        if arr[mid] > element{
+            return BinarySearch(arr: arr, element: element, low: low, high: mid - 1)
+        }
+        else{
+            return BinarySearch(arr: arr, element: element, low: mid + 1, high: high)
+        }
+    }
+    return -1
+}
 
 
 
